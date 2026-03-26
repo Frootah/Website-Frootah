@@ -339,11 +339,6 @@ footer {
 }
 
 /* MOBILE */
-@media (max-width: 800px) {
-  .about-grid {
-    flex-direction: column;
-  }
-}
 @media (max-width: 600px) {
 
   body {
