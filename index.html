@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frootah's page | Feel the sound</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+
+  <!-- NAV -->
+  <header>
+    <h1 class="logo">Frootah</h1>
+    <nav>
+      <a href="#index">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#music">Music</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero scroll-mt-200" id="home">
+    <h2>Feel the Sound</h2>
+    <p>Dark vibes. Clean design. Music-driven.</p>
+    <button>This one hits different </button>
+  </section>
+
+  <!-- PLAYER -->
+  <iframe data-testid="embed-iframe" 
+    style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/1y7mHNwGWPNt3qUCQTRdk9?utm_source=generator&theme=0" 
+    width="100%" 
+    height="152" 
+    frameBorder="0" 
+    allowfullscreen="" 
+    allow="autoplay; 
+    clipboard-write; 
+    encrypted-media; 
+    fullscreen; 
+    picture-in-picture"
+    loading="lazy">
+  </iframe>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Frootah — beginner in IT, focused on design and learning myself new things.
+      I enjoy building and learning new things. So if you want to challenge me, send me a msg ;)
+    </p>
+
+    <div class="status">
+      <span id="statusDot"></span>
+      <p id="statusText">Offline</p>
+    </div>
+
+    <div class="about-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="about-left">
+
+      <div class="about-box">
+        <h3>Things I want to learn:</h3>
+        <ul>
+          <li>Advanced JavaScript</li>
+          <li>Animations & UI design</li>
+          <li>Backend development</li>
+        </ul>
+      </div>
+
+      <div class="about-box">
+        <h3>Things I can:</h3>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>Basic JavaScript</li>
+          <li>Simple projects with Arduino IDE</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="about-right">
+      <h3>Hardware</h3>
+      <p>
+        OS: Windows (WSL with Ubuntu)<br>
+        Shell: Bash<br>
+        Editor: VS Code<br>
+        Setup: Laptop + external monitor<br>
+      </p>
+    </div>
+
+  </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="card project-card">
+            <img src="imgs/project1.png" alt="Project 1 Screenshot" class="project-img">
+            <div class="project-info">
+                <h3>Building this website</h3>
+                <p>
+                    Simple, dark themed website giving info about myself.  
+                    Includes a custom music player, responsive design, smooth transitions, and dark aesthetics.  
+                    I’m continuously learning to add more features like Spotify integration and project showcases.
+                </p>
+                <div class="project-tags">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Javascript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card project-card upcoming">
+            <img src="imgs/Upcoming-Projects.png" alt="Project 2 Screenshot" class="project-img">
+            <div class="project-info">
+            <h3>Next project    (Upcoming)</h3>
+            <p>Brief description of project 2 goes here.</p>
+            </div>
+        </div>
+
+</section>
+
+  <!-- MUSIC / SPOTIFY -->
+  <section class="music" id="music">
+    <h2>My Playlist</h2>
+
+    <iframe 
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/49sp4DYrsFPwAz3pHePaTF?theme=0"
+      width="100%" 
+      height="500"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Frootah. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
